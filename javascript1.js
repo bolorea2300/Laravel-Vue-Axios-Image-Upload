@@ -25,7 +25,7 @@ var app = new Vue({
             };
 
             axios
-                .post("/upload", formData, config)
+                .post("/api/upload", formData, config)
                 .then(res => {
                     alert("投稿に成功しました!");
                     //投稿に成功したらリセット
